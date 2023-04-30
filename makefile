@@ -6,7 +6,7 @@ copy:
 	
 
 gitpush:
-	git add . ; git commit -am "deploy"; git push -u origin master; cd -
+	git add . ; git commit -am "deploy generated files"; git push -u origin master; cd -
 
 generate:
 	npm run generate
