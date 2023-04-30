@@ -41,12 +41,25 @@
           </div>
         </div>
         <ContentRenderer :value="doc" class="nuxt-content" />
-        <!-- 
-        <nuxt-link to="/blog" class="hover:text-pink-800 hover:underline">
-          <BackIcon
-            class="w-4 h-4 mr-1 inline text-gray-800 fill-current"
-          />back
-        </nuxt-link> -->
+        <NuxtLink
+          to="/blog"
+          class="group hover:text-pink-800 transition-colors duration-150 ease-in"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            enable-background="new 0 0 24 24"
+            viewBox="0 0 24 24"
+            width="18px"
+            height="18px"
+            class="group-hover:fill-pink-800 inline align-text-bottom transition-colors duration-150 ease-in"
+          >
+            <rect fill="none" height="24" width="24" />
+            <path
+              d="M9,19l1.41-1.41L5.83,13H22V11H5.83l4.59-4.59L9,5l-7,7L9,19z"
+            />
+          </svg>
+          back
+        </NuxtLink>
       </div>
     </ContentDoc>
   </main>
