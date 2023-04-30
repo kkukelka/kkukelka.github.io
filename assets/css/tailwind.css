@@ -1,0 +1,11 @@
+@import "fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .active-nav-link {
+    @apply text-pink-800 decoration-pink-800;
+  }
+}
