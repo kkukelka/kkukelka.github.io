@@ -1,16 +1,13 @@
 ---
 title: The Gamble of Excess
 subtitle: Being a completionist in a world of streaming services
+description: Who would have thought that having all 6 seasons of House of Cards at ones fingertips could turn out be the tipping point for ones sanity.
 author: Kilian Kukelka
 slug: /the-gamble-of-excess
 date: "2020-08-09"
 updatedAt: "2020-08-09"
 length: 3
 ---
-
-Who would have thought that having all 6 seasons of House of Cards at ones fingertips could turn out be the tipping point for ones sanity.
-
-<!--more-->
 
 ### Six seasons
 

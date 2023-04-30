@@ -1,6 +1,7 @@
 ---
 title: On My Relationship With Painting
 subtitle: An attempt to reflect on my distorted relationship with the craft I so deeply admire.
+description: The time has come to dissect an issue that has been plaguing my mind for far too long. A question that is very close to my heart. Perhaps too close to even make a rational assessment about what is truly going on behind my ego-tinted glasses. But I'm certain that if I don’t take action now, every day that goes by will just be another attempt to catch my own tail.
 author: Kilian Kukelka
 slug: /on-my-relationship-with-painting
 image: on-my-relationship-with-painting
@@ -8,10 +9,6 @@ date: "2022-10-02"
 updatedAt: "2022-10-02"
 length: 8
 ---
-
-The time has come to dissect an issue that has been plaguing my mind for far too long. A question that is very close to my heart. Perhaps too close to even make a rational assessment about what is truly going on behind my ego-tinted glasses. But I'm certain that if I don’t take action now, every day that goes by will just be another attempt to catch my own tail.
-
-<!--more-->
 
 ### The Absence of Fun
 

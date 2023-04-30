@@ -1,16 +1,13 @@
 ---
 title: Welcome the End
 subtitle: The value of friendship in a burning world
+description: In times of social uproar, economic downturns and seemingly daily environmental disasters, it is getting increasingly harder for me to keep a healthy mindset.
 author: Kilian Kukelka
 slug: /welcome-the-end
 date: "2020-09-13"
 updatedAt: "2020-09-13"
 length: 3
 ---
-
-In times of social uproar, economic downturns and seemingly daily environmental disasters, it is getting increasingly harder for me to keep a healthy mindset.
-
-<!--more-->
 
 In times of social uproar, economic downturns and seemingly daily environmental disasters, it is getting increasingly harder for me to keep a healthy mindset. All the hours I spent soul searching in the last few years seem to have gone to waste. Just when you think you have finally figured it out, your efforts suddenly lose all their meaning. What's the point of trying anymore? What's the point of developing your skills? When in the next few years, the way we treated nature in the past is gonna catch up with us.
 
