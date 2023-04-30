@@ -1,13 +1,13 @@
 <template>
-  <div class="h-screen text-gray-800" style="background: #f9fafb">
+  <div class="text-gray-800" style="background: #f9fafb">
     <div class="container max-w-4xl mx-auto pt-8 sm:pt-10 pb-12 sm:pb-24">
       <h1
         class="text-3xl sm:text-4xl font-bold text-gray-700 leading-none pb-12"
       >
         Blog
       </h1>
-      <section class="text-gray-700 pb-12">
-        <ContentList v-slot="{ list }" path="/blog">
+      <section class="text-gray-700 pb-12 space-y-8">
+        <ContentList v-slot="{ list }" :query="query">
           <NuxtLink
             v-for="article in list"
             :key="article._path"
@@ -43,7 +43,7 @@
 </template>
 
 <script lang="ts" setup>
-// meta
+import type { QueryBuilderParams } from "@nuxt/content/dist/runtime/types";
 definePageMeta({
   layout: "default",
 });
@@ -57,4 +57,10 @@ useHead(() => ({
     },
   ],
 }));
+
+const query: QueryBuilderParams = {
+  path: "/blog",
+  limit: 10,
+  sort: [{ date: -1 }],
+};
 </script>

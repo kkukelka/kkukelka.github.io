@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen text-gray-800" style="background: #f9fafb">
+  <div class="text-gray-800" style="background: #f9fafb">
     <div class="container max-w-4xl mx-auto pt-8 sm:pt-10 pb-12 sm:pb-24">
       <section class="flex items-start pb-12">
         <img
@@ -53,36 +53,38 @@
       </section>
       <section class="text-gray-700 pb-12">
         <h2 class="text-2xl mb-5">Latest Blog Posts</h2>
-        <ContentList v-slot="{ list }" path="/blog">
-          <NuxtLink
-            v-for="article in list"
-            :key="article._path"
-            :to="article._path"
-            class="block pl-5 border-l-4 border-gray-600 group hover:border-pink-800 cursor-pointer transition-colors duration-150 ease-in"
-          >
-            <!-- <img
+        <div class="space-y-8">
+          <ContentList v-slot="{ list }" :query="query">
+            <NuxtLink
+              v-for="article in list"
+              :key="article._path"
+              :to="article._path"
+              class="block pl-5 border-l-4 border-gray-600 group hover:border-pink-800 cursor-pointer transition-colors duration-150 ease-in"
+            >
+              <!-- <img
               :src="`/images/blog/${article.image}.jpg`"
               alt=""
               class="w-1/4"
             /> -->
-            <h3
-              class="text-lg font-bold tracking-wide group-hover:text-pink-800 transition-colors duration-150 ease-in"
-            >
-              {{ article.title }}
-            </h3>
-            <p class="mb-0.5">{{ article.subtitle }}</p>
-            <p class="text-sm font-light">
-              {{
-                new Date(article.date).toLocaleDateString("en-GB", {
-                  year: "numeric",
-                  month: "short",
-                  day: "numeric",
-                })
-              }}
-              - {{ article.length }} minute read
-            </p>
-          </NuxtLink>
-        </ContentList>
+              <h3
+                class="text-lg font-bold tracking-wide group-hover:text-pink-800 transition-colors duration-150 ease-in"
+              >
+                {{ article.title }}
+              </h3>
+              <p class="mb-0.5">{{ article.subtitle }}</p>
+              <p class="text-sm font-light">
+                {{
+                  new Date(article.date).toLocaleDateString("en-GB", {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                  })
+                }}
+                - {{ article.length }} minute read
+              </p>
+            </NuxtLink>
+          </ContentList>
+        </div>
       </section>
       <section class="text-gray-700 pb-12">
         <h2 class="text-2xl mb-5">Illustrations</h2>
@@ -123,7 +125,8 @@
 </template>
 
 <script lang="ts" setup>
-// meta
+import type { QueryBuilderParams } from "@nuxt/content/dist/runtime/types";
+
 definePageMeta({
   layout: "default",
 });
@@ -137,6 +140,11 @@ useHead(() => ({
     },
   ],
 }));
+const query: QueryBuilderParams = {
+  path: "/blog",
+  limit: 3,
+  sort: [{ date: -1 }],
+};
 
 // vars
 const aboutData = [
