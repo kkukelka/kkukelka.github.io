@@ -46,7 +46,7 @@
           </a>
 
           <a
-            href="https://twitter.com/kiliankukelka"
+            href="https://www.instagram.com/kiliankukelka"
             target="_blank"
             class="focus:outline-none"
             aria-label="Instagram"
