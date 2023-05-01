@@ -12,12 +12,18 @@
           <h2 class="font-normal text-2xl sm:text-3xl text-pink-800 mb-6">
             {{ doc.subtitle }}
           </h2>
-          <img
-            v-if="doc.image"
-            :src="`/images/blog/${doc.image}.jpg`"
-            alt="Blog post image"
-            class="mb-6"
-          />
+          <figure class="mb-6">
+            <img
+              v-if="doc.image"
+              :src="`/images/blog/${doc.image}.jpg`"
+              :alt="doc.alt || 'Blog post image'"
+            />
+            <figcaption
+              v-if="doc.attribution"
+              class="text-gray-500 text-xs text-right font-light mt-1.5"
+              v-html="doc.attribution"
+            />
+          </figure>
           <div class="flex items-center">
             <img
               class="h-16 w-16 rounded-full mr-4"
