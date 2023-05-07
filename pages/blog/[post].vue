@@ -88,6 +88,15 @@ const localDateString = computed<string>((): string => {
       })
     : "";
 });
+
+useSeoMeta({
+  title: data.value?.title,
+  ogTitle: data.value?.title,
+  description: data.value?.description,
+  ogDescription: data.value?.description,
+  ogImage: () => `/images/blog/${data.value?.image}.jpg`,
+  twitterCard: "summary_large_image",
+});
 </script>
 
 <style>
