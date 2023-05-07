@@ -4,7 +4,7 @@
       <div class="container max-w-4xl mx-auto pb-20">
         <div
           id="post-head"
-          class="pt-8 sm:pt-10 pb-6 border-b-2 border-pink-800 mb-8"
+          class="sm:pt-10 pb-6 border-b-2 border-pink-800 mb-8"
         >
           <h1 class="font-bold text-3xl sm:text-4xl text-pink-800">
             {{ doc.title }}
