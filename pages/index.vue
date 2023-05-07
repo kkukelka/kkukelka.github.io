@@ -1,6 +1,6 @@
 <template>
   <div class="text-gray-800" style="background: #f9fafb">
-    <div class="container max-w-4xl mx-auto pt-8 sm:pt-10 pb-12 sm:pb-24">
+    <div class="container max-w-4xl mx-auto pt-4 sm:pt-10 pb-12 sm:pb-24">
       <section class="flex items-start pb-12">
         <img
           class="rounded-xl w-24 sm:w-20 h-24 sm:h-20 flex-none mr-5 sm:mr-8"
@@ -88,9 +88,7 @@
       </section>
       <section class="text-gray-700 pb-12">
         <h2 class="text-2xl mb-5">Illustrations</h2>
-        <div
-          class="flex flex-col sm:flex-row text-gray-700 space-y-4 sm:space-y-0 sm:justify-between"
-        >
+        <div class="grid sm:grid-cols-3 gap-4 text-gray-700 sm:justify-between">
           <a
             v-for="item in illustrations"
             :key="item.alias"
@@ -101,9 +99,8 @@
             <img
               :src="`/images/illustrations/${item.alias}.jpg`"
               :alt="item.alt"
-              width="200"
-              height="200"
               aspect-ratio="1/1"
+              clas="w-full"
             />
             <svg
               width="24"
