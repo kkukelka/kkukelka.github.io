@@ -89,6 +89,27 @@ const localDateString = computed<string>((): string => {
     : "";
 });
 
+const scructuredData = computed(() => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: data.value?.title,
+    image: () => `/images/blog/${data.value?.image}.jpg`,
+    datePublished: data.value?.date,
+    dateModified: data.value?.updatedAt,
+    description: data.value?.description,
+  };
+});
+
+useHead(() => ({
+  script: [
+    {
+      type: "application/ld+json",
+      json: scructuredData,
+    },
+  ],
+}));
+
 useSeoMeta({
   title: data.value?.title,
   ogTitle: data.value?.title,
