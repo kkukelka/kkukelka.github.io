@@ -8,6 +8,7 @@ image: on-my-relationship-with-painting
 date: "2022-10-02"
 updatedAt: "2022-10-02"
 length: 8
+wordCount: 833
 ---
 
 ### The Absence of Fun

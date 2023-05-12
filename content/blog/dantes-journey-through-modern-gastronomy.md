@@ -10,6 +10,7 @@ attribution: Sailko, <a href="https://creativecommons.org/licenses/by/3.0" targe
 date: "2023-02-18"
 updatedAt: "2023-02-18"
 length: 5
+wordCount: 1273
 ---
 
 After binge-eating my way out of the state of starvation I was afflicted with coming home from my latest fine-dining adventure, I felt an urgency to reflect upon this both obscure yet fascinating experience of mine. An experience only made possible thanks to the hedonistic treasure trove that is our beloved late-stage capitalism. It’s like us Westerners can’t help ourselves but to take consumerism to a degree at which it starts to become a parody of itself. We’ve managed to morph something as mundane as the act of food consumption into a classist system of oppression. In our modern-day food culture mere eating is to be considered an activity for peasants. Only those of us who’ve acquired the necessary financial means are worthy of participating in the world of dining. But I believe I’m getting ahead of myself here. Loosing myself in hyperbolic statements before the story has even begun.

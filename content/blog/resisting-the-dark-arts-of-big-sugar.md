@@ -10,6 +10,7 @@ attribution: Kilian Kukelka
 date: "2023-05-06"
 updatedAt: "2023-05-06"
 length: 9
+wordCount: 1747
 ---
 
 Dear creator of the universe, what vicious notion has driven you to bestow us with this plant that is the cocoa tree. Looking at past inventions of yours, you must have been very well aware of the consequences your actions might entail. Once again, my species’ innate tendency to favour short-term pleasure has set us up to be particularly vulnerable to the addictive properties that lie dormant in its beans. It comes as no surprise that you have chosen for it to be concealed deep within the rainforest’s verdant embrace. Yet even your all-knowing wisdom was unable to foresee mankind's insatiable appetite for more, setting in motion the relentless pursuit to exploit the gift that was given to us.

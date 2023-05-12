@@ -7,6 +7,7 @@ slug: /craving-artistic-fulfillment
 date: "2021-01-03"
 updatedAt: "2021-01-03"
 length: 5
+wordCount: 475
 ---
 
 ### Design systems
