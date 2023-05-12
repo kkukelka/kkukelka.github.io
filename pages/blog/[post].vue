@@ -98,6 +98,7 @@ const scructuredData = computed(() => {
     datePublished: data.value?.date,
     dateModified: data.value?.updatedAt,
     description: data.value?.description,
+    wordCount: data.value?.wordCount,
   };
 });
 
@@ -105,7 +106,7 @@ useHead(() => ({
   script: [
     {
       type: "application/ld+json",
-      json: scructuredData,
+      children: JSON.stringify(scructuredData.value),
     },
   ],
 }));
