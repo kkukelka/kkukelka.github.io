@@ -94,10 +94,11 @@ const scructuredData = computed(() => {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: data.value?.title,
-    image: () => `/images/blog/${data.value?.image}.jpg`,
+    image: `/images/blog/${data.value?.image}.jpg`,
     datePublished: data.value?.date,
     dateModified: data.value?.updatedAt,
     description: data.value?.description,
+    author: data.value?.author,
     wordCount: data.value?.wordCount,
   };
 });
