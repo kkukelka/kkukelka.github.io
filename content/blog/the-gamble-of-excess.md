@@ -7,6 +7,7 @@ slug: /the-gamble-of-excess
 date: "2020-08-09"
 updatedAt: "2020-08-09"
 length: 3
+wordCount: 540
 ---
 
 ### Six seasons

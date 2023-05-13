@@ -7,6 +7,7 @@ slug: /direction-through-comparison
 date: "2020-08-02"
 updatedAt: "2020-08-02"
 length: 5
+wordCount: 914
 ---
 
 ### The broken compass

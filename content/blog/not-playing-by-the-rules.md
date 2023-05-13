@@ -7,6 +7,7 @@ slug: /not-playing-by-the-rules
 date: "2021-10-22"
 updatedAt: "2021-10-22"
 length: 4
+wordCount: 693
 ---
 
 ### Growing up

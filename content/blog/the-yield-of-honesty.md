@@ -7,6 +7,7 @@ slug: /the-yield-of-honesty
 date: "2020-08-24"
 updatedAt: "2020-08-24"
 length: 6
+wordCount: 728
 ---
 
 ### Being honest to youself

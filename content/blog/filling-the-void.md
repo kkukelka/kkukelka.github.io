@@ -7,6 +7,7 @@ slug: /filling-the-void
 date: "2020-08-16"
 updatedAt: "2020-08-16"
 length: 2
+wordCount: 577
 ---
 
 ### Too much of everything
