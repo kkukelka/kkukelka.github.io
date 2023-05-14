@@ -13,11 +13,10 @@
             {{ doc.subtitle }}
           </h2>
           <figure class="mb-6">
-            <nuxt-img
+            <img
               v-if="doc.image"
               width="640"
               height="426"
-              format="webp"
               :src="`/images/blog/${doc.image}.jpg`"
               :alt="doc.alt || 'Blog post image'"
             />
@@ -28,10 +27,9 @@
             />
           </figure>
           <div class="flex items-center">
-            <nuxt-img
+            <img
               width="64"
               height="64"
-              format="webp"
               class="h-16 w-16 rounded-full mr-4"
               src="/images/profile-picture-128.jpg"
               alt="Author image"

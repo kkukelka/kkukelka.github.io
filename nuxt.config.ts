@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   target: "static",
-  modules: ["@nuxt/content", "@nuxt/image-edge", "@nuxtjs/tailwindcss"],
+  modules: ["@nuxt/content", "@nuxtjs/tailwindcss"],
   app: {
     head: {
       charset: "utf-8",
