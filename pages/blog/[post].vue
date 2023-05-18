@@ -31,7 +31,7 @@
               width="64"
               height="64"
               class="h-16 w-16 rounded-full mr-4"
-              src="/images/profile-picture-128.jpg"
+              src="/images/profile-picture-128.webp"
               alt="Author image"
             />
             <div class="flex flex-col">
