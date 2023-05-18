@@ -17,7 +17,7 @@
               v-if="doc.image"
               width="640"
               height="426"
-              :src="`/images/blog/${doc.image}.jpg`"
+              :src="`/images/blog/${doc.image}.webp`"
               :alt="doc.alt || 'Blog post image'"
             />
             <figcaption
