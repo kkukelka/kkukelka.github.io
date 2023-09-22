@@ -18,6 +18,13 @@
             active-class="active-nav-link"
             >blog</NuxtLink
           >
+          <NuxtLink
+            tag="a"
+            to="/publications"
+            class="text-md hover:text-pink-800 underline underline-offset-4 decoration-2 decoration-transparent hover:decoration-pink-800 transition-colors duration-150 ease-in"
+            active-class="active-nav-link"
+            >publications</NuxtLink
+          >
         </div>
         <div class="flex items-center space-x-2">
           <a
