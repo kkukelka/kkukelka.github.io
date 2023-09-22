@@ -1,5 +1,5 @@
 <template>
-  <div class="text-gray-800" style="background: #f9fafb">
+  <div class="text-gray-800">
     <div class="container max-w-4xl mx-auto pt-4 sm:pt-10 pb-12 sm:pb-24">
       <section class="flex items-start pb-12">
         <img

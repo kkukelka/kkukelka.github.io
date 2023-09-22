@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 sm:px-0" style="background: #f9fafb">
+  <div class="px-4 sm:px-0 h-screen" style="background: #f9fafb">
     <NavBar />
     <slot />
   </div>
