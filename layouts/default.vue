@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 sm:px-0 h-screen" style="background: #f9fafb">
+  <div class="px-4 sm:px-0">
     <NavBar />
     <slot />
   </div>
@@ -15,6 +15,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+body {
+  background-color: "#f9fafb";
 }
 
 *,

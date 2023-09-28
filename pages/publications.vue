@@ -1,6 +1,6 @@
 <template>
   <div class="text-gray-800">
-    <div class="container max-w-4xl mx-auto sm:pt-10 pb-12 sm:pb-24">
+    <div class="container max-w-4xl mx-auto sm:pt-10">
       <h1
         class="text-3xl sm:text-4xl font-bold text-gray-700 leading-none pb-12"
       >
