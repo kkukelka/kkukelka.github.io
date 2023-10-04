@@ -155,7 +155,7 @@ const aboutData = [
     name: "Frontend Developer",
     location: ["hokify"],
     urls: ["https://hokify.at/jobs"],
-    when: "since 2019",
+    when: "2019-2023",
   },
   {
     name: "B.Sc. Computer Science",
