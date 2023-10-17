@@ -82,7 +82,7 @@ const { data } = await useAsyncData(path, () => {
   return queryContent().where({ _path: path }).findOne();
 });
 
-const localDateString = computed<string>((): string => {
+const localDateString = computed(() => {
   const date = new Date(data.value?.date);
   return date
     ? date.toLocaleDateString("en-GB", {
