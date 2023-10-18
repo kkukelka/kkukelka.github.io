@@ -5,7 +5,7 @@ author: Kilian Kukelka
 image: the-joy-of-observation
 alt: Book Cover
 attribution: © Kilian Kukelka
-publicationDate: "2023-09-01"
+publishedDate: "2023-09-01"
 updatedAt: "2023-09-22"
 distributors:
   [

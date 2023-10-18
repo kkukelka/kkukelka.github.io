@@ -7,7 +7,7 @@ slug: /resisting-the-dark-arts-of-big-sugar
 image: resisting-the-dark-arts-of-big-sugar
 alt: Shelf full of chocolate bars
 attribution: Kilian Kukelka
-date: "2023-05-06"
+publishedDate: "2023-05-06"
 updatedAt: "2023-05-06"
 length: 9
 wordCount: 1747

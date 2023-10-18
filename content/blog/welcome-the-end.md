@@ -4,7 +4,7 @@ subtitle: The value of friendship in a burning world
 description: In times of social uproar, economic downturns and seemingly daily environmental disasters, it is getting increasingly harder for me to keep a healthy mindset.
 author: Kilian Kukelka
 slug: /welcome-the-end
-date: "2020-09-13"
+publishedDate: "2020-09-13"
 updatedAt: "2020-09-13"
 length: 3
 wordCount: 564

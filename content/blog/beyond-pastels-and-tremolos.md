@@ -7,7 +7,7 @@ slug: /beyond-pastels-and-tremolos
 image: beyond-pastels-and-tremolos
 alt: Minimal writing setup
 attribution: Kilian Kukelka
-date: "2023-10-12"
+publishedDate: "2023-10-12"
 updatedAt: "2023-10-12"
 length: 2
 wordCount: 476

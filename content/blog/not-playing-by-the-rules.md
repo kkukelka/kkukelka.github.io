@@ -4,7 +4,7 @@ subtitle: When the established way just never feels right
 description: The lessons you learn from examining your childhood are the most insightful pieces of knowledge to explain the mannerisms of your current self.
 author: Kilian Kukelka
 slug: /not-playing-by-the-rules
-date: "2021-10-22"
+publishedDate: "2021-10-22"
 updatedAt: "2021-10-22"
 length: 4
 wordCount: 693

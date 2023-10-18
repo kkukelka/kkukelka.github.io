@@ -4,7 +4,7 @@ subtitle: Coping with the emptiness of functional design
 description: Having now spent 18 months in the professional world of web development, the initial glamour of novelty has started to fade away. What first felt like a breath of fresh air in regard to nourishing my creative needs has turned out the be a predictable process shaped by the rules of a predefined design system.
 author: Kilian Kukelka
 slug: /craving-artistic-fulfillment
-date: "2021-01-03"
+publishedDate: "2021-01-03"
 updatedAt: "2021-01-03"
 length: 5
 wordCount: 475

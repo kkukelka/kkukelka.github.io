@@ -4,7 +4,7 @@ subtitle: Leaving your creative freedom at the doorstep
 description: Today's accomplishment-driven society has created a vicious rat race, leaving anyone behind that doesn't want to play by the rules. When your CV is more important than your growth as a person, one easily forgest about the joy of expressing oneself.
 author: Kilian Kukelka
 slug: /the-corporate-barrier
-date: "2020-09-05"
+publishedDate: "2020-09-05"
 updatedAt: "2020-09-05"
 length: 3
 wordCount: 423

@@ -27,7 +27,7 @@
             <p class="mb-0.5">{{ article.subtitle }}</p>
             <p class="text-sm font-light">
               {{
-                new Date(article.date).toLocaleDateString("en-GB", {
+                new Date(article.publishedDate).toLocaleDateString("en-GB", {
                   year: "numeric",
                   month: "short",
                   day: "numeric",

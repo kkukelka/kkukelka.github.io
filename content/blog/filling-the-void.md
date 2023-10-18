@@ -4,7 +4,7 @@ subtitle: On what's fueling us in a world of overabundance
 description: Not one day goes by that I don't question the path that I'm currently pursuing. Something feels off. It just doesn't seem right. Not necessarilly the work that im actually doing, but the emptiness that it leaves behind. Even though I'm providing value for the team and project I'm a part of, I am not able to appreciate my doings on a personal level.
 author: Kilian Kukelka
 slug: /filling-the-void
-date: "2020-08-16"
+publishedDate: "2020-08-16"
 updatedAt: "2020-08-16"
 length: 2
 wordCount: 577

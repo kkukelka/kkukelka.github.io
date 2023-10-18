@@ -83,7 +83,7 @@ const { data } = await useAsyncData(path, () => {
 });
 
 const localDateString = computed(() => {
-  const date = new Date(data.value?.date);
+  const date = new Date(data.value?.publishedDate);
   return date
     ? date.toLocaleDateString("en-GB", {
         year: "numeric",
@@ -99,7 +99,7 @@ const scructuredData = computed(() => {
     "@type": "BlogPosting",
     headline: data.value?.title,
     image: `/images/blog/${data.value?.image}.jpg`,
-    datePublished: data.value?.date,
+    datePublished: data.value?.publishedDate,
     dateModified: data.value?.updatedAt,
     description: data.value?.description,
     author: data.value?.author,

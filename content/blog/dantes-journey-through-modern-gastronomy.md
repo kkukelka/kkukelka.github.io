@@ -7,7 +7,7 @@ slug: /dantes-journey-through-modern-gastronomy
 image: dantes-journey-through-modern-gastronomy
 alt: Joseph Anton Koch, inferno, 1825-28, 05 cerbero
 attribution: Sailko, <a href="https://creativecommons.org/licenses/by/3.0" target="_blank" class="hover:underline">CC BY 3.0</a>, via Wikimedia Commons
-date: "2023-02-18"
+publishedDate: "2023-02-18"
 updatedAt: "2023-02-18"
 length: 5
 wordCount: 1273

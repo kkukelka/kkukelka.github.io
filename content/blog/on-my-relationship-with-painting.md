@@ -5,7 +5,7 @@ description: The time has come to dissect an issue that has been plaguing my min
 author: Kilian Kukelka
 slug: /on-my-relationship-with-painting
 image: on-my-relationship-with-painting
-date: "2022-10-02"
+publishedDate: "2022-10-02"
 updatedAt: "2022-10-02"
 length: 8
 wordCount: 833

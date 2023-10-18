@@ -4,7 +4,7 @@ subtitle: The benefits of being honest to yourself and your surroundings
 description: Honesty. A luxurious good in current times. Because without it, what's a conversation even good for? So let's grab our adventure bags and hop on the quest of being the most honest self we can be.
 author: Kilian Kukelka
 slug: /the-yield-of-honesty
-date: "2020-08-24"
+publishedDate: "2020-08-24"
 updatedAt: "2020-08-24"
 length: 6
 wordCount: 728

@@ -4,7 +4,7 @@ subtitle: On how to reverse engineer your role models
 description: A vast majority of my friends - me included - have reached this certain point in life, where direction seems to be a key factor for our development. The mid 20s are slowly presenting themself as a broken compass, leaving you aimless on your journey to your next destination. What's next to come?
 author: Kilian Kukelka
 slug: /direction-through-comparison
-date: "2020-08-02"
+publishedDate: "2020-08-02"
 updatedAt: "2020-08-02"
 length: 5
 wordCount: 914
