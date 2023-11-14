@@ -140,7 +140,7 @@ useHead(() => ({
 const query: QueryBuilderParams = {
   path: "/blog",
   limit: 3,
-  sort: [{ date: -1 }],
+  sort: [{ publishedDate: -1 }],
 };
 
 // vars

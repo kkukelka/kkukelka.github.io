@@ -119,6 +119,6 @@ useHead(() => ({
 const query: QueryBuilderParams = {
   path: "/publications",
   limit: 10,
-  sort: [{ date: -1 }],
+  sort: [{ publishedDate: -1 }],
 };
 </script>
