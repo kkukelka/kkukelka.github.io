@@ -146,22 +146,28 @@ const query: QueryBuilderParams = {
 // vars
 const aboutData = [
   {
+    name: "Fullstack Developer",
+    location: ["Austrian Academy of Sciences"],
+    urls: ["https://www.oeaw.ac.at/en/oeaw-home/austrian-academy-of-sciences"],
+    when: "since 2024",
+  },
+  {
+    name: "Frontend Developer",
+    location: ["hokify"],
+    urls: ["https://hokify.at/business"],
+    when: "2019 - 2023",
+  },
+  {
     name: "Freelance",
     location: ["KodaDot", "My Vienna Austria"],
     urls: ["https://kodadot.xyz/", "https://myviennaaustria.at/"],
     when: "since 2021",
   },
   {
-    name: "Frontend Developer",
-    location: ["hokify"],
-    urls: ["https://hokify.at/business"],
-    when: "2019-2023",
-  },
-  {
     name: "B.Sc. Computer Science",
     location: ["University of Vienna"],
     urls: ["https://www.univie.ac.at/en/"],
-    when: "since 2018",
+    when: "2018 - 2019",
   },
   {
     name: "B.A. Musicology",
