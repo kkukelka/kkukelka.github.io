@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "@nuxtjs/sitemap"],
+  modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "@nuxtjs/sitemap", "@nuxt/image"],
   site: {
     url: process.env.NUXT_PUBLIC_SITE_URL,
   },
