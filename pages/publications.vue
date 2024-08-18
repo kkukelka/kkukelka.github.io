@@ -37,7 +37,7 @@
                       {{ publication.title }}
                     </h3>
                     <h4 class="font-bold tracking-wide">Description:</h4>
-                    <p class="sm:mb-2 line-clamp-3">
+                    <p class="sm:mb-2 line-clamp-3 leading-snug">
                       {{ publication.description }}
                     </p>
                   </div>

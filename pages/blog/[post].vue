@@ -154,7 +154,7 @@ useSeoMeta({
   @apply text-xl tracking-wide mb-2 text-pink-800;
 }
 .nuxt-content p {
-  @apply mb-5;
+  @apply mb-5 leading-snug;
 }
 .nuxt-content blockquote {
   @apply border-l-4 border-gray-400 pl-4 italic ml-4 my-8;
