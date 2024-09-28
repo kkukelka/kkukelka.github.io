@@ -1,6 +1,13 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtConfig } from "nuxt/config";
+
 export default defineNuxtConfig({
-  modules: ["@nuxt/content", "@nuxtjs/tailwindcss", "@nuxtjs/sitemap", "@nuxt/image"],
+  modules: [
+    "@nuxt/content",
+    "@nuxt/eslint",
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/sitemap",
+    "@nuxt/image",
+  ],
   site: {
     url: process.env.NUXT_PUBLIC_SITE_URL,
   },
