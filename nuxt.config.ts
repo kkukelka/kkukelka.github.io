@@ -1,16 +1,21 @@
 import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
-  modules: [
-    "@nuxt/content",
-    "@nuxt/eslint",
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/sitemap",
-    "@nuxt/image",
-  ],
+  modules: ["@nuxt/content", "@nuxt/eslint", "@nuxtjs/sitemap", "@nuxt/image"],
+
   site: {
     url: process.env.NUXT_PUBLIC_SITE_URL,
   },
+
+  css: ["~/assets/css/tailwind.css"],
+
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+
   app: {
     head: {
       htmlAttrs: {
@@ -49,4 +54,6 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  compatibilityDate: "2025-03-07",
 });
