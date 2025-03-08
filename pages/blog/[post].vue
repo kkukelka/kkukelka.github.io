@@ -148,27 +148,3 @@ useSeoMeta({
   twitterCard: "summary_large_image",
 });
 </script>
-
-<style>
-.nuxt-content h3 {
-  @apply text-xl tracking-wide mb-2 text-pink-800;
-}
-.nuxt-content p {
-  @apply mb-5 leading-snug;
-}
-.nuxt-content blockquote {
-  @apply border-l-4 border-gray-400 pl-4 italic ml-4 my-8;
-}
-.nuxt-content ol {
-  @apply list-decimal ml-6;
-}
-.nuxt-content ul {
-  @apply list-disc ml-6;
-}
-.nuxt-content code {
-  @apply bg-gray-300 px-1 font-mono rounded border border-gray-400;
-}
-.nuxt-content hr {
-  @apply my-8;
-}
-</style>

@@ -6,9 +6,7 @@
           <h1 class="text-3xl sm:text-4xl font-bold text-gray-700 leading-none">
             Kilian Kukelka
           </h1>
-          <div class="text-lg text-gray-700 group-hover:text-pink-700 pr-3">
-            Software Engineer & Writer
-          </div>
+          <div class="text-lg text-gray-700">Software Engineer & Writer</div>
         </div>
       </section>
       <!-- <section class="text-gray-700 pb-4">
