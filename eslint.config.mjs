@@ -1,10 +1,10 @@
 import withNuxt from "./.nuxt/eslint.config.mjs";
-import prettier from "eslint-plugin-prettier";
+import eslintConfigPrettier from "eslint-config-prettier";
 
-export default withNuxt({
-  files: ["**/*.{js,ts,vue,json}"],
-  plugins: [prettier],
-  parserOptions: {
-    ecmaVersion: 2023,
+export default withNuxt([
+  {
+    files: ["**/*.{js,ts,vue}"],
   },
-});
+  // config to disable all ESLint rules that might conflict with Prettier's formatting
+  eslintConfigPrettier,
+]);
