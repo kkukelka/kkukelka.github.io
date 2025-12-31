@@ -6,19 +6,14 @@
       >
         Blog
       </h1>
-      <section class="text-gray-700 pb-12 space-y-8">
-        <ContentList v-slot="{ list }" :query="query">
+      <section class="text-gray-700 pb-12">
+        <div v-if="articles" class="space-y-8">
           <NuxtLink
-            v-for="article in list"
-            :key="article._path"
-            :to="article._path"
+            v-for="article in articles"
+            :key="article.path"
+            :to="article.path"
             class="block pl-5 border-l-4 border-gray-600 group hover:border-pink-800 cursor-pointer transition-colors duration-150 ease-in"
           >
-            <!-- <img
-                :src="`/images/blog/${article.image}.jpg`"
-                alt=""
-                class="w-1/4"
-              /> -->
             <h3
               class="text-lg font-bold tracking-wide group-hover:text-pink-800 transition-colors duration-150 ease-in"
             >
@@ -33,17 +28,15 @@
                   day: "numeric",
                 })
               }}
-              - {{ article.length }} minute read
             </p>
           </NuxtLink>
-        </ContentList>
+        </div>
       </section>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import type { QueryBuilderParams } from "@nuxt/content/dist/runtime/types";
 definePageMeta({
   layout: "default",
 });
@@ -58,9 +51,7 @@ useHead(() => ({
   ],
 }));
 
-const query: QueryBuilderParams = {
-  path: "/blog",
-  limit: 10,
-  sort: [{ publishedDate: -1 }],
-};
+const { data: articles } = await useAsyncData("blog-home", () =>
+  queryCollection("blog").order("publishedDate", "DESC").limit(10).all(),
+);
 </script>

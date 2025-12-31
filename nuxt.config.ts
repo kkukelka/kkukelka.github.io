@@ -4,8 +4,8 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxt/eslint", "@nuxtjs/sitemap", "@nuxt/image"],
 
-  site: {
-    url: process.env.NUXT_PUBLIC_SITE_URL,
+    content: {
+    experimental: { nativeSqlite: true }
   },
 
   vite: {

@@ -9,69 +9,32 @@
           <div class="text-lg text-gray-700">Software Engineer & Writer</div>
         </div>
       </section>
-      <!-- <section class="text-gray-700 pb-4">
-        <h2 class="text-2xl mb-5">Experience</h2>
-        <div class="flex flex-wrap text-gray-700">
-          <div
-            v-for="item in aboutData"
-            :key="item.name"
-            class="w-full sm:w-1/2 flex items-baseline mb-8"
-          >
-            <div class="border border-gray-500 w-3 h-3 mr-5 rounded-full"></div>
-            <div class="flex flex-col">
-              <div class="font-semibold text-lg">{{ item.name }}</div>
-              <a
-                v-for="(url, index) in item.urls"
-                :key="url"
-                :href="url"
-                target="_blank"
-                class="cursor-pointer underline underline-offset-4 decoration-transparent hover:decoration-pink-800 text-pink-800 inline-flex items-center transition-colors duration-150 ease-in"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  enable-background="new 0 0 24 24"
-                  viewBox="0 0 24 24"
-                  width="24px"
-                  height="24px"
-                  class="w-4 h-4 mr-1 inline fill-pink-800"
-                >
-                  <rect fill="none" height="24" width="24" />
-                  <path d="M9,5v2h6.59L4,18.59L5.41,20L17,8.41V15h2V5H9z" />
-                </svg>
-                {{ item.location[index] }}
-              </a>
-              <div class="">{{ item.when }}</div>
-            </div>
-          </div>
-        </div>
-      </section> -->
       <section class="text-gray-700 pb-12">
         <h2 class="text-2xl mb-5">Latest Blog Posts</h2>
         <div class="space-y-8">
-          <ContentList v-slot="{ list }" :query="query">
-            <NuxtLink
-              v-for="article in list"
-              :key="article._path"
-              :to="article._path"
-              class="block pl-5 border-l-4 border-gray-600 group hover:border-pink-800 cursor-pointer transition-colors duration-150 ease-in"
+          <NuxtLink
+            v-for="article in articles"
+            :key="article.path"
+            :to="article.path"
+            class="block pl-5 border-l-4 border-gray-600 group hover:border-pink-800 cursor-pointer transition-colors duration-150 ease-in"
+          >
+            <h3
+              class="text-lg font-bold tracking-wide group-hover:text-pink-800 transition-colors duration-150 ease-in"
             >
-              <h3
-                class="text-lg font-bold tracking-wide group-hover:text-pink-800 transition-colors duration-150 ease-in"
-              >
-                {{ article.title }}
-              </h3>
-              <p class="mb-0.5">{{ article.subtitle }}</p>
-              <p class="text-sm font-light">
-                {{
-                  new Date(article.publishedDate).toLocaleDateString("en-GB", {
-                    year: "numeric",
-                    month: "short",
-                    day: "numeric",
-                  })
-                }}
-                - {{ article.length }} minute read
-              </p>
-            </NuxtLink>
-          </ContentList>
+              {{ article.title }}
+            </h3>
+            <p class="mb-0.5">{{ article.subtitle }}</p>
+            <p class="text-sm font-light">
+              {{
+                new Date(article.publishedDate).toLocaleDateString("en-GB", {
+                  year: "numeric",
+                  month: "short",
+                  day: "numeric",
+                })
+              }}
+              - {{ article.meta.length }} minute read
+            </p>
+          </NuxtLink>
         </div>
       </section>
       <section class="text-gray-700 pb-12">
@@ -110,8 +73,6 @@
 </template>
 
 <script lang="ts" setup>
-import type { QueryBuilderParams } from "@nuxt/content/dist/runtime/types";
-
 definePageMeta({
   layout: "default",
 });
@@ -125,45 +86,10 @@ useHead(() => ({
     },
   ],
 }));
-const query: QueryBuilderParams = {
-  path: "/blog",
-  limit: 3,
-  sort: [{ publishedDate: -1 }],
-};
 
-// vars
-const aboutData = [
-  {
-    name: "Fullstack Developer",
-    location: ["Austrian Academy of Sciences"],
-    urls: ["https://www.oeaw.ac.at/en/oeaw-home/austrian-academy-of-sciences"],
-    when: "since 2024",
-  },
-  {
-    name: "Frontend Developer",
-    location: ["hokify"],
-    urls: ["https://hokify.at/business"],
-    when: "2019 - 2023",
-  },
-  {
-    name: "Freelance",
-    location: ["KodaDot", "My Vienna Austria"],
-    urls: ["https://kodadot.xyz/", "https://myviennaaustria.at/"],
-    when: "since 2021",
-  },
-  {
-    name: "B.Sc. Computer Science",
-    location: ["University of Vienna"],
-    urls: ["https://www.univie.ac.at/en/"],
-    when: "2018 - 2019",
-  },
-  {
-    name: "B.A. Musicology",
-    location: ["University of Vienna"],
-    urls: ["https://www.univie.ac.at/en/"],
-    when: "2015 - 2018",
-  },
-];
+const { data: articles } = await useAsyncData("home", () =>
+  queryCollection("blog").order("publishedDate", "DESC").limit(3).all(),
+);
 
 const illustrations = [
   {
