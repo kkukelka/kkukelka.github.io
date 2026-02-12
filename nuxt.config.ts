@@ -2,18 +2,6 @@ import { defineNuxtConfig } from "nuxt/config";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
-  modules: ["@nuxt/content", "@nuxt/eslint", "@nuxtjs/sitemap", "@nuxt/image"],
-
-    content: {
-    experimental: { nativeSqlite: true }
-  },
-
-  vite: {
-    plugins: [tailwindcss()],
-  },
-
-  css: ["~/assets/css/main.css"],
-
   app: {
     head: {
       htmlAttrs: {
@@ -53,5 +41,17 @@ export default defineNuxtConfig({
     },
   },
 
-  compatibilityDate: "2025-03-07",
+  compatibilityDate: "2026-02-12",
+
+  content: {
+    experimental: { sqliteConnector: "native" },
+  },
+
+  css: ["~/assets/css/main.css"],
+
+  modules: ["@nuxt/content", "@nuxt/eslint", "@nuxtjs/sitemap", "@nuxt/image"],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
