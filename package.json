@@ -7,23 +7,25 @@
     "generate": "nuxt generate",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/content": "^3.10.0",
+    "@nuxt/content": "^3.11.2",
     "@nuxt/image": "^2.0.0",
-    "@nuxtjs/sitemap": "^7.5.0",
-    "better-sqlite3": "^12.5.0",
-    "nuxt": "^4.2.2",
-    "tailwindcss": "^4.1.18"
+    "@nuxtjs/sitemap": "^7.6.0",
+    "better-sqlite3": "^12.6.2",
+    "nuxt": "^4.3.1"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^1.12.1",
+    "@nuxt/eslint": "^1.15.1",
     "@tailwindcss/vite": "^4.1.18",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.0",
     "eslint-config-prettier": "^10.1.8",
-    "prettier": "^3.7.4",
+    "prettier": "^3.8.1",
+    "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
   }
 }
