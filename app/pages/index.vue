@@ -47,11 +47,15 @@
             target="_blank"
             class="relative group"
           >
-            <img
+            <NuxtPicture
               :src="`/images/illustrations/${item.alias}.jpg`"
               :alt="item.alt"
-              aspect-ratio="1/1"
-              clas="w-full"
+              width="400"
+              height="400"
+              sizes="sm:100vw md:33vw"
+              format="webp"
+              placeholder
+              :img-attrs="{ class: 'w-full object-cover aspect-square' }"
             />
             <svg
               width="24"
@@ -102,7 +106,7 @@ const illustrations = [
     name: "Karlie Kloss Portrait",
     alias: "karlie-kloss-portrait",
     alt: "Portrait study of model Karlie Kloss",
-    url: "https://www.artstation.com/artwork/L3QWYk",
+    url: "https://www.instagram.com/p/CPONUbOFU2D/",
   },
   {
     name: "Street Style 06",
