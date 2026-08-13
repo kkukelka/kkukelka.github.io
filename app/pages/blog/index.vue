@@ -1,11 +1,7 @@
 <template>
   <div class="text-gray-800">
     <div class="container max-w-4xl mx-auto sm:pt-10 pb-12 sm:pb-24">
-      <h1
-        class="text-3xl sm:text-4xl font-bold text-gray-700 leading-none pb-12"
-      >
-        Blog
-      </h1>
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-700 leading-none pb-12">Blog</h1>
       <section class="text-gray-700 pb-12">
         <div v-if="articles" class="space-y-8">
           <NuxtLink

@@ -49,7 +49,7 @@ export default defineNuxtConfig({
 
   css: ["~/assets/css/main.css"],
 
-  modules: ["@nuxt/content", "@nuxt/eslint", "@nuxtjs/sitemap", "@nuxt/image"],
+  modules: ["@nuxt/content", "@nuxtjs/sitemap", "@nuxt/image"],
 
   vite: {
     plugins: [tailwindcss()],

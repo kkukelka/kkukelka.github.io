@@ -1,17 +1,9 @@
 <template>
   <div class="text-gray-800">
     <div class="container max-w-4xl mx-auto sm:pt-10">
-      <h1
-        class="text-3xl sm:text-4xl font-bold text-gray-700 leading-none pb-12"
-      >
-        Publications
-      </h1>
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-700 leading-none pb-12">Publications</h1>
       <section class="text-gray-700 pb-12 space-y-8">
-        <li
-          v-for="publication in articles"
-          :key="publication.path"
-          class="list-none"
-        >
+        <li v-for="publication in articles" :key="publication.path" class="list-none">
           <div class="flex sm:space-x-5">
             <div class="hidden sm:inline w-1/4">
               <img
@@ -41,25 +33,18 @@
                   </p>
                 </div>
               </div>
-              <h4 class="font-bold tracking-wide inline sm:block">
-                Publication Date:
-              </h4>
+              <h4 class="font-bold tracking-wide inline sm:block">Publication Date:</h4>
               <p class="inline sm:block text-sm mb-2">
                 {{
-                  new Date(publication.publicationDate).toLocaleDateString(
-                    "en-GB",
-                    {
-                      year: "numeric",
-                      month: "short",
-                      day: "numeric",
-                    },
-                  )
+                  new Date(publication.publicationDate).toLocaleDateString("en-GB", {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                  })
                 }}
               </p>
               <div class="inline-flex sm:block">
-                <h4 class="font-bold tracking-wide inline sm:block">
-                  Available at:
-                </h4>
+                <h4 class="font-bold tracking-wide inline sm:block">Available at:</h4>
 
                 <NuxtLink
                   v-for="distributor in publication.distributors"
@@ -85,9 +70,7 @@
                     <rect fill="none" height="24" width="24" />
                     <path d="M9,5v2h6.59L4,18.59L5.41,20L17,8.41V15h2V5H9z" />
                   </svg>
-                  <span class="sm:hidden text-pink-800">
-                    {{ distributor.alt }}</span
-                  >
+                  <span class="sm:hidden text-pink-800"> {{ distributor.alt }}</span>
                 </NuxtLink>
               </div>
             </div>
@@ -114,9 +97,6 @@ useHead(() => ({
 }));
 
 const { data: articles } = await useAsyncData("publications", () =>
-  queryCollection("publications")
-    .order("publicationDate", "DESC")
-    .limit(10)
-    .all(),
+  queryCollection("publications").order("publicationDate", "DESC").limit(10).all(),
 );
 </script>

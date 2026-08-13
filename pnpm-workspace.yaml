@@ -1,0 +1,12 @@
+# -------------------------
+# Security Policies
+# -------------------------
+# Enforcminutes) cooldown period for all new packagese a 3-day (4320
+# 1 day = 1440, 3 days = 4320, 7 days = 10080
+minimumReleaseAge: 4320
+blockExoticSubdeps: true
+allowBuilds:
+  "@parcel/watcher": true
+  better-sqlite3: true
+  esbuild: true
+  sharp: true

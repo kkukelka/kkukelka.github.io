@@ -3,9 +3,7 @@
     <div class="container max-w-4xl mx-auto pt-4 sm:pt-10 pb-12 sm:pb-24">
       <section class="flex items-start pb-12">
         <div class="flex flex-col">
-          <h1 class="text-3xl sm:text-4xl font-bold text-gray-700 leading-none">
-            Kilian Kukelka
-          </h1>
+          <h1 class="text-3xl sm:text-4xl font-bold text-gray-700 leading-none">Kilian Kukelka</h1>
           <div class="text-lg text-gray-700">Software Engineer & Writer</div>
         </div>
       </section>
