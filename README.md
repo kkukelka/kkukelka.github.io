@@ -1,44 +1,17 @@
 # Personal Website & Blog
 
-## docs
+The site lives in `docs/`. GitHub Pages serves these HTML, CSS, JavaScript, and image files directly. There is no build step.
 
-folder that hosts all static assets & generated files
+## Preview locally
 
-## Setup
+Run `make dev` with Python 3 installed, then open `http://127.0.0.1:3000`.
 
-Make sure to install the dependencies:
+## Edit the site
 
-```bash
-# yarn
-yarn install
+Edit the HTML in `docs/`. For a new post, create `docs/blog/<slug>/index.html` and link to it from `docs/blog/index.html`. Update the three latest posts on the homepage and add the new URL to `docs/sitemap.xml`.
 
-# npm
-npm install
+To use the optional formatter and linter, run `pnpm install` with Node.js and pnpm installed. Run `pnpm fmt` to format the site, `pnpm fmt:check` to check formatting, and `pnpm lint` to lint the JavaScript.
 
-# pnpm
-pnpm install
-```
+## Publish
 
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+GitHub Pages publishes from the `/docs` folder on `master`. On `master`, run `make deploy` to commit changes in `docs/` and push the branch to `origin`. Commit changes outside `docs/` separately before deploying them.
